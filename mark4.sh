@@ -99,6 +99,7 @@ adb shell input keyevent DEL
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 echo "DEVICE INFO"
+adb shell getprop | grep "model\|version.sdk\|manufacturer\|hardware\|platform\|revision\|serialno\|product.name\|brand" $info
 
 adb shell cat /proc/cpuinfo
 adb devices -l
