@@ -1,0 +1,17 @@
+Requirement :-
+
+1.AAPT needs to be installed, it stands for Android Asset Packaging Tool.Used to view, create, and update your APKs (as well as zip and jar files)
+
+2.**incase if any error,
+  use the below code to install:-(Internet connection is needed to install AAPT)
+
+                 sudo apt-get install  android-tools-adb
+
+                 sudo apt install aapt
+
+3.At the last of testing the app will close.
+
+4.And you can see the Device info in the console itself.
+
+
+
