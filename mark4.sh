@@ -14,7 +14,7 @@ adb shell input keyevent DEL
 
 
 echo "Installing the application into the device"
-for file in *.apk; do adb install $file; done
+for file in *.apk; do adb install -r $file; done
 
 
 
