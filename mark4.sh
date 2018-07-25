@@ -102,6 +102,8 @@ echo "DEVICE INFO"
 adb shell getprop | grep "model\|version.sdk\|manufacturer\|hardware\|platform\|revision\|serialno\|product.name\|brand" $info
 
 adb shell cat /proc/cpuinfo
+
+adb shell getprop ro.build.version.release
 adb devices -l
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "THE TEST IS COMPLETE"
