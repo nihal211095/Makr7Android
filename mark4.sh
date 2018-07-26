@@ -14,7 +14,7 @@ adb shell input keyevent DEL
 
 
 echo "Installing the application into the device"
-for file in *.apk; do adb install $file; done
+for file in *.apk; do adb install -r $file; done
 
 
 
@@ -33,10 +33,10 @@ adb shell input keyevent 66
 
 
 #for entry of the "user pin" and "pass pin"
-echo "Enter the user number"
+echo "Enter the User number"
 read user
 adb shell input text $user
-echo "Enter the pin"
+echo "Enter the Pin"
 read pin
 adb shell input keyevent 66
 adb shell input text $pin
